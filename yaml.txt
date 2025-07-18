@@ -81,3 +81,33 @@ Summary
 - Master indentation and structure — whitespace is significant.
 - Practice reading, writing, linting, and validating YAML daily.
 - You’ll encounter YAML in almost every modern CI/CD and infrastructure tool.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

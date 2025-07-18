@@ -1,0 +1,35 @@
+name: sahil
+# blocklist
+cities:
+ -delhi
+ -mumbai
+ -chandigarh
+
+---
+# inlinelist
+cities:[delhi, mumbai, chandigarh]
+---
+# inlinemap
+{mango: Yellow, age: 1}
+---
+# Multiline Literal String 
+bio: |
+ hey myname is
+ Sahil Sharma
+---
+# Multiline Folded String
+message: >
+ My name
+ is
+ Sahil
+ Sharma 
+#  Document Start Markers
+---
+# Typed Scalars
+number: 12
+intgr: !!int 23
+flt: !!float 23.3
+null: !!null
+# Document End Markers
+...
+
