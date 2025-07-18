@@ -1,0 +1,83 @@
+basic yaml theory:
+YAML – Overview
+==============
+
+YAML stands for “YAML Ain’t Markup Language” — a **human‑readable data serialization format** that is widely used for configuration files and data exchange.
+
+Why YAML?
+----------
+- Easy to read and write
+- Supports complex data structures (lists, dictionaries, nested values)
+- Adopted by many tools and platforms: Docker, Kubernetes, GitHub Actions, Ansible, CI/CD pipelines, etc.
+
+Basic YAML Syntax
+-----------------
+**Key‑Value (Map / Dictionary)**
+
+    name: Sahil
+    age: 23
+    location: Punjab
+
+**Lists**
+
+    skills:
+      - Linux
+      - Git
+      - YAML
+      - AWS
+
+**Nested Values**
+
+    user:
+      name: Sahil
+      contact:
+        email: sahil@example.com
+        phone: 1234567890
+
+**Inline (compact) notation** — handy but less readable:
+
+    user: {name: Sahil, age: 23}
+    skills: [Linux, Git, YAML]
+
+YAML Rules
+----------
+- **Indentation:** Use spaces (never tabs). Two or four spaces are common.
+- **Comments:** Use `#` to add comments.
+- **Data types:** Strings, numbers, booleans, and null are supported.
+- **Strings:** Quoting is optional unless special characters are present.
+- **Multiline strings:** Use `|` (literal) or `>` (folded).
+
+**Multiline examples**
+
+    bio: |
+      I am a DevOps learner.
+      I love automation and Linux.
+
+    note: >
+      This is a folded
+      string with line breaks.
+
+Where YAML Is Used in DevOps
+----------------------------
+- **GitHub Actions** — workflow definitions
+- **Docker Compose** — container orchestration config
+- **Kubernetes** — deployments, services, ingress, etc.
+- **Ansible** — playbooks and inventory
+- **CI/CD tools** — Jenkins, GitLab CI, and others
+- **Terraform** — backend configuration & remote state (limited)
+
+YAML vs JSON
+------------
+| Feature       | YAML (pros)               | JSON (pros)             |
+|---------------|---------------------------|-------------------------|
+| Readability   | Easier for humans         | Strict & predictable    |
+| Comments      | Yes (`#`)                 | No                      |
+| Verbosity     | Less                      | More                    |
+| Typical Use   | DevOps configuration files| APIs, data interchange  |
+
+Summary
+-------
+- YAML is an essential skill for DevOps and cloud‑native work.
+- Master indentation and structure — whitespace is significant.
+- Practice reading, writing, linting, and validating YAML daily.
+- You’ll encounter YAML in almost every modern CI/CD and infrastructure tool.
