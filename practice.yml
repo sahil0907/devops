@@ -32,4 +32,62 @@ flt: !!float 23.3
 null: !!null
 # Document End Markers
 ...
-
+#Sequential
+student: !!seq 
+ -name: sahil
+ -roll: 21bet1057
+#or 
+ student: [name: sahil, roll: 21bet1057]
+#Sparse sequence
+sparse seq:
+ -Name: Sahil
+ -
+ -Roll: 21bet1057
+ #Nested Sequence
+ -details:
+  -name:
+   -data: Sahil
+   -roll: 21bet1057
+ -liking:
+   -fruit: mango
+#Map(Key-Value pairs)
+mymap: !!Map
+ name: sahil
+ job: student
+#also:
+mymap2: {name: sahil, job: student }
+mymap3:
+ name: sahil
+ age: 123
+ #why can i do  a nested under age , with or without -
+ #Pairs: !!pairs (allows duplicate keys)
+ pairexample: !!pairs
+  -job: student
+  -job: teacher
+#Set: !!set ( No duplicates)
+name: !!set:
+ ?Sahil
+ ?Sharma
+#Dictionary 
+people: !!omap
+ -Sahil:
+   name: Sahil
+   age: 23
+ -Rahul:
+   name: Rahul
+   age: 23      
+#Anchors: &name
+liking: &like
+ fav: mango
+ notFav: berries      
+person1:
+ name: Sahil
+ liking: mango 
+person2:
+ name: Sharma
+ <<: *like  
+person3:
+ name: Kunal
+ <<: *like
+ notFav: banana
+  
