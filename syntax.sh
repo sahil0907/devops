@@ -48,4 +48,22 @@ if (( a > b )); then
   echo "a is greater"
 fi
 
+case $variable in
+  pattern1)
+    # code
+    ;;
+  pattern2)
+    # code
+    ;;
+  *)
+    # default
+    ;;
+esac
+
+read -p "Enter choice: " choice
+case $choice in
+  1) echo "Start";;
+  2) echo "Stop";;
+  *) echo "Invalid choice";;
+esac
 
