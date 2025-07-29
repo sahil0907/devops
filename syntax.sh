@@ -67,3 +67,16 @@ case $choice in
   *) echo "Invalid choice";;
 esac
 
+
+for file in *.txt; do
+    echo "Processing $file"
+done
+
+for i in 1 2 3 4 5; do
+    echo "Number: $i"
+done
+
+
+for (( i=0; i<5; i++ )); do
+    echo "Index: $i"
+done
